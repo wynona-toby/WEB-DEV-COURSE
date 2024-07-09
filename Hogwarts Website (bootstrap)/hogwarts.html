@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Hogwarts</title>
+
+  <style>
+    body{
+      font-family: "Montserrat", sans-serif;
+      background: linear-gradient(45deg, #704636, #50382c, #ae7e50, #2a1b14);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .navbar-brand{
+      font-size: 1.5rem;
+      padding-left: 12px;
+      font-weight: 500;
+      color: #D2B48C;
+    }
+    .nav-link{
+      color: #D2B48C;
+    }
+    .search{
+      background-color: #8B4513;
+      color:#D2B48C
+    }
+    .search:hover{
+      background-color: #D2B48C;
+      color:#8B4513
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+<section class="navb">
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #3b1d0880;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo" width="35" height="35"> HOGWARTS </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#hero1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hero2">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Houses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Griffindor</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Hufflepuff</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Ravenclaw</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Slytherin</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="search here" aria-label="Search" style="background-color: #D2B48C;">
+          <button class="btn search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  </section>
+  
+
+  <!--hero section 1-->
+  <section id="hero1">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-12 col-sm-8 col-lg-6">
+          <img src="./images/castle.jpg" class="d-block mx-lg-auto img-fluid" alt="castle" width="700" height="500" loading="lazy" style="border-radius:10px; border-style: solid; border-width: 3px; border-color:#2a1b1450">
+        </div>
+        <div class="col-lg-6">
+          <h1  style="color:#D2B48C !important" class="display-5 fw-bold text-body-emphasis lh-1 mb-3"> <span style="color:#b38e5d; text-shadow: black 0px 0px 5px;"> HOGWARTS </span> : School of Witchcraft and Wizardry</h1>
+          <p class="lead" style="color: white;">Welcome to Hogwarts, the magical school of witchcraft and wizardry! Step into a world of enchanted hallways, flying lessons, and screeching plants. Join us as we explore the wonders of magic and uncover the mysteries that make Hogwarts truly enchanting.
+
+          </p>
+          <p class="lead" style="font-style: Italic; font-weight:bold; color: #D2B48C;"> ❝ Draco Dormiens Nunquam Titillandus ❞</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#enroll"><button type="button" class="btn btn-lg px-4 me-md-2" style="background-color:#63310e; color:#D2B48C;">Enroll Now!</button></a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--hero section 2-->
+  <section id="hero2">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis" style="color:#D2B48C !important; text-shadow: black 0px 0px 5px;" >About Us</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4" style="color: white;">Located in a huge sprawling castle in the Scottish highlands, the celebrated school of witchcraft and wizardry taught its young students how to finesse their magical skills. Hogwarts was founded around 990 A.D. by four of the greatest wizards and witches of the age: Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw, and Salazar Slytherin who each represented an aspect of personality that they wanted to bring out in new students.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-lg px-4 me-sm-3" style="background-color:#63310e; color:#D2B48C;">Read More</button>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="./images/hp bg.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--enroll-->
+  <section id="enroll">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3" style="color:#D2B48C !important; text-shadow: black 0px 0px 5px;"> Join us today!</h1>
+          <p class="col-lg-10 fs-4" style="color: white;">Want to be a part of the magical community? Enter the following details and start the process to join the magical world of Harry Potter! </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 needs-validation" style=" background-color:#5a3324; color:#D2B48C" novalidate >
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+              <label for="floatingInput">Email address</label>
+              <div class="invalid-email">
+                Please enter valid email
+              </div>
+        
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+              <label for="floatingPassword">Password</label>
+              <div class="invalid-password">
+                Please enter password
+              </div>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+        
+            <button class="w-100 btn btn-lg" type="submit" style="background-color:#D2B48C; color:#5a3324;">Sign up</button>
+            <hr class="my-4">
+            <small class="text-body-secondary"  style="color:#D2B48C !important">By clicking Sign up, you agree to the terms of use.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    (() => {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+    
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+</html>
